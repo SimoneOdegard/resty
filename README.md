@@ -12,11 +12,10 @@ resty
 
 base
 
-## Image
+## Deployed site
 
-![UML](./assets/UML.jpg)
-![responses](./assets/responses.png)
+[netlify](https://kind-ritchie-1fc32f.netlify.app/)
 
 ## Pull Requests
 
-- [PR 1]()
+- [PR 1](https://github.com/SimoneOdegard/resty/pull/1)
