@@ -8,9 +8,10 @@ Simone Odegard
 
 resty
 
-## Branch Name
+## Branch Name(s)
 
 base
+props-and-state
 
 ## Deployed site
 
@@ -19,3 +20,4 @@ base
 ## Pull Requests
 
 - [PR 1](https://github.com/SimoneOdegard/resty/pull/1)
+- [PR 2](https://github.com/SimoneOdegard/resty/pull/3)
