@@ -1,0 +1,9 @@
+$bgColor: white;
+
+#jsonBox {
+  border: 1px solid #3f3f3f;
+  background-color: $bgColor;
+  height: 300px;
+  margin: 30px;
+  overflow-y: scroll;
+}
