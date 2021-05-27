@@ -5,17 +5,9 @@ import './style/results.scss';
 const Results = (props) => {
   return (
     <div id="jsonBox">
+      <h3 id="resultsText">Results</h3>
       <section className="results">
-        <ReactJson src={props.people} />
-        {/* <ul>
-          {Object.keys(props.people).map((item, idx) => {
-            return(
-              <li key={idx}>
-                <a href={props.people[item]}>{item}</a>
-              </li>
-            );
-          })}
-        </ul> */}
+        <ReactJson src={props.results} />
       </section>
     </div>
   )
