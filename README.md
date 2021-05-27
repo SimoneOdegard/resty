@@ -12,6 +12,7 @@ resty
 
 base
 props-and-state
+composition
 
 ## Deployed site
 
@@ -21,3 +22,4 @@ props-and-state
 
 - [PR 1](https://github.com/SimoneOdegard/resty/pull/1)
 - [PR 2](https://github.com/SimoneOdegard/resty/pull/3)
+- [PR 3]()

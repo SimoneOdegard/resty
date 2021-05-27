@@ -1,16 +1,19 @@
 $bgColor: white;
 $darkColor: #3f3f3f;
 
-#resultsText {
+#historyText {
   color: $darkColor;
   text-align: center;
 }
 
-#jsonBox {
+#history {
+  margin: 0 auto;
+  float: left;
   border: 1px solid $darkColor;
   background-color: $bgColor;
   height: 300px;
   width: 500px;
   margin: 30px;
+  margin-top: 11px;
   overflow-y: scroll;
 }
