@@ -25,17 +25,12 @@ class Form extends React.Component {
   handleSubmit = async e => {
     e.preventDefault();
 
-    // ========= STORAGE ========= //
+    // storage
     let url = this.state.url;
     let method = this.state.method;
     sessionStorage.setItem(this.state.counter, (`${method} ${url}`));
     let counter = this.state.counter + 1;
     this.setState({ counter });
-
-    let requestOptions = {
-      method: this.state.method,
-      headers: { 'Content-Type': 'application/json' }
-    };
 
     try {
       let raw = await superagent(method, url);
