@@ -1,18 +1,19 @@
-$primary: rgb(248, 139, 157);
+$primary: #e099b3;
 $white: whitesmoke;
 $border: #a7a7a7;
+$dark: #3f3f3f;
 
 #form {
   text-align: center;
 }
 
 #info {
-  color: #3f3f3f;
+  color: $dark;
 }
 
 #inputUrl {
   background-color: $white;
-  color: #3f3f3f;
+  color: $dark;
   width: 400px;
   padding: 16px;
   font-size: 16px;
@@ -31,6 +32,11 @@ $border: #a7a7a7;
   border: 1px solid $border;
   border-radius: 5px;
   cursor: pointer;
+  transition: 350ms all;
+}
+
+#dropDown:hover {
+  background: $dark;
 }
 
 #goButton {
@@ -43,8 +49,14 @@ $border: #a7a7a7;
   border: 1px solid $border;
   border-radius: 5px;
   cursor: pointer;
+  transition: 350ms all;
+
+}
+
+#goButton:hover {
+  background: $dark;
 }
 
 #results {
-  color: #3f3f3f;
+  color: $dark;
 }
