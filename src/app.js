@@ -6,7 +6,7 @@ import Form from './form.js';
 import Results from './results.js';
 import History from './history.js';
 import Help from './help.js';
-import { If, Then, Else } from './if';
+import { If, Then } from './if';
 import './style/style.scss';
 
 class App extends React.Component {
@@ -23,6 +23,16 @@ class App extends React.Component {
 
   toggleLoading = () => {
     this.setState({ loading: !this.state.loading });
+  }
+
+  handleURL = e => {
+    let url = e.target.value;
+    this.setState({ url: url });
+  }
+
+  handleMethod = e => {
+    let method = e.target.value;
+    this.setState({ method: method });
   }
 
   handleForm = (count, results, url, method) => {
@@ -42,6 +52,8 @@ class App extends React.Component {
             <Route exact path="/">
               <Form 
               prompt="Go!"
+              handleURL={this.handleURL}
+              handleMethod={this.handleMethod}
               toggleLoading={this.toggleLoading}
               handler={this.handleForm}
               url={this.state.url}
@@ -55,7 +67,7 @@ class App extends React.Component {
             </Route>
             <Route exact path="/history">
               <Form 
-              prompt="Go!"
+              prompt="Re-Run!"
               toggleLoading={this.toggleLoading}
               handler={this.handleForm}
               url={this.state.url}

@@ -29,10 +29,7 @@ class Help extends React.Component {
             2. Click the history item you'd like to search.
           </li>
           <li>
-            3. Click Home to return back to the form. The form will be auto-populated with your selected history item.
-          </li>
-          <li>
-            4. Click 'Go!' to receive results.
+            3. The form will auto-populated with your selected history item. Click "Re-Run!" to receive results.
           </li>
         </ul>
       </div>
