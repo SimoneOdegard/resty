@@ -16,7 +16,8 @@ class History extends React.Component {
   render() {
     return (
       <div id="history">
-        <h3 id="historyText">History</h3>
+        <h3 className="historyText">History</h3>
+        <h3 className="historyText">Click a saved search and hit re-run to view results!</h3>
         <ul>
           {Object.keys(sessionStorage).map((i, value) => {
             return (

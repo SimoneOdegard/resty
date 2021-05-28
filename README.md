@@ -23,3 +23,4 @@ composition
 - [PR 1](https://github.com/SimoneOdegard/resty/pull/1)
 - [PR 2](https://github.com/SimoneOdegard/resty/pull/3)
 - [PR 3](https://github.com/SimoneOdegard/resty/pull/5)
+- [PR 4]()
