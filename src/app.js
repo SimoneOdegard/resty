@@ -18,6 +18,7 @@ class App extends React.Component {
       results: '',
       url: '',
       method: '',
+      displayModal: false
     }
   }
 
@@ -42,6 +43,11 @@ class App extends React.Component {
   handleHistory = (url, method) => {
     this.setState({ url, method });
   }
+
+  displayModal = () => {
+    this.setState ({ displayModal: true });
+  }
+  
 
   render() {
     return (
@@ -68,6 +74,8 @@ class App extends React.Component {
             <Route exact path="/history">
               <Form 
               prompt="Re-Run!"
+              handleURL={this.handleURL}
+              handleMethod={this.handleMethod}
               toggleLoading={this.toggleLoading}
               handler={this.handleForm}
               url={this.state.url}

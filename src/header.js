@@ -7,7 +7,7 @@ class Header extends React.Component {
     return (
       <div id="header">
         <header>
-          <h1 id="restyHeader">RESTy App</h1>
+          <h1 id="restyHeader">RESTy</h1>
         </header>
 
         <nav>

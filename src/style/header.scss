@@ -1,36 +1,47 @@
-$primary: rgb(248, 139, 157);
+$primary: #e099b3;
 $darkColor: #3f3f3f;
 $white: whitesmoke;
 
 #header {
   text-align: center;
-}
-
-#restyHeader {
-  font-size: 70px;
-  color: $primary;
-  text-shadow: 2px 2px 4px #7a7a7a;
-  margin-bottom: -10px;
-  margin-top: -2px;
-}
-
-ul {
-  list-style-type: none;
   
-  .liHeader {
-    display: inline;
-    padding: 3px;
-    padding-left: 40px;
-    padding-right: 40px;
+  #restyHeader {
+    font-size: 70px;
+    color: $primary;
+    text-shadow: 2px 2px 4px #a8a7a7;
+    margin-bottom: -10px;
+    margin-top: -1px;
+    margin-left: 40px;
+  }
 
-    a {
-      text-align: center;
-      color: $white;
-      text-decoration: none;
-      background: $primary;
-      border-radius: 3px;
-      padding: 2px 12px 2px 12px;
-      margin-top: 10px;
+  ul {
+    list-style-type: none;
+    
+    .liHeader {
+      display: inline;
+      padding: 3px;
+      margin-right: 20px;
+      margin-left: 20px;
+  
+      a {
+        text-align: center;
+        color: $white;
+        text-decoration: none;
+        background: #cdb4db;
+        border-radius: 3px;
+        padding: 4px 12px 4px 12px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: 350ms all;
+      }
+
+      a:hover {
+        background: #3f3f3f;
+      }
+
+      a:focus{
+        background: #3f3f3f;
+      }
     }
   }
 }
